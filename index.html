@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نور الهدى | آیت الکرسی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>نور الهدى</h1>
+
+    
+<div class="glass-card">
+  <div class="ayah-badge">
+    ﴿ آيَةُ الْكُرْسِي ﴾
+</div>
+
+    <h2>آیت الکرسی</h2>
+
+    <p class="ayah-text">
+اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ
+</p>
+  
+  <button onclick="toggleTranslation()">
+    نمایش ترجمه فارسی
+</button>
+  
+  <h2 class="translation-title">
+    ترجمه فارسی آیت‌الکرسی
+</h2>
+
+<p class="translation-text">
+خداوند، معبودی جز او نیست؛ زنده و پاینده است. نه خواب سبک او را فرامی‌گیرد و نه خواب سنگین. آنچه در آسمان‌ها و زمین است، از آنِ اوست. چه کسی می‌تواند نزد او شفاعت کند، مگر به اجازه‌اش؟ آنچه را پیش روی مردم و پشت سر آنان است می‌داند، و آنان به چیزی از دانش او احاطه ندارند، مگر به آنچه او بخواهد. قلمرو فرمانروایی او آسمان‌ها و زمین را فراگرفته است و نگهداری آن دو بر او دشوار نیست؛ و او بلندمرتبه و بزرگ است.
+</p>
+
+</div>
+
+  <script>
+function toggleTranslation() {
+    const translation = document.querySelector(".translation-text");
+    const title = document.querySelector(".translation-title");
+    const button = document.querySelector("button");
+
+    if (translation.style.display === "none") {
+        translation.style.display = "block";
+        title.style.display = "block";
+        button.innerText = "مخفی کردن ترجمه";
+    } else {
+        translation.style.display = "none";
+        title.style.display = "none";
+        button.innerText = "نمایش ترجمه فارسی";
+    }
+}
+</script>
+  
+  <div id="intro-popup">
+    <div class="intro-box">
+        <h2>نورالهدی</h2>
+        <p>طراح سایت: تیم نورالهدی</p>
+        <p>واتساپ: 09363526501</p>
+        <span>با نور قرآن، در مسیر هدایت</span>
+    </div>
+</div>
+
+</body>
+</html>
