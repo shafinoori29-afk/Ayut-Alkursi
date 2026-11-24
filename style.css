@@ -1,4 +1,13 @@
-here@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Vazirmatn:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+.arabic {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    line-height: 2.2;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -337,10 +346,3 @@ body {
     overflow-x: hidden;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
-
-.arabic {
-    font-family: 'Amiri', serif;
-    direction: rtl;
-    line-height: 2.2;
-}
