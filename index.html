@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>آیت الکرسی</title>
-    <meta name="description" content="نورالهدی؛ گنجینه‌ای از آیات قرآن کریم همراه با تلاوت و ترجمه فارسی، با نور قرآن در مسیر هدایت.">
     <link rel="stylesheet" href="style.css">
-    <meta name="google-site-verification" content="ELD7RXwF6XLYfXjgHKjzW8xxprCe7C9-R567iG-Q_bk" />
 </head>
 <body>
 
-    <h1>آیت الکرسی با ترجمه فارسی</h1>
-    <p>نورالهدی | متن کامل آیت الکرسی با ترجمه فارسی</p>
+    <h1>نور الهدى</h1>
+    <button class="four-ghol-btn" onclick="openSites()">
+    مجموعه قرآنی نورالهدی
+</button>
 
+    
 <div class="glass-card">
   <div class="ayah-badge">
     ﴿ آيَةُ الْكُرْسِي ﴾
@@ -25,9 +26,7 @@
 اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ
 </p>
   
-  <button onclick="toggleTranslation()">
-    نمایش ترجمه فارسی
-</button>
+  
   
   <h2 class="translation-title">
     ترجمه فارسی آیت‌الکرسی
@@ -40,22 +39,39 @@
 </div>
 
   <script>
-function toggleTranslation() {
-    const translation = document.querySelector(".translation-text");
-    const title = document.querySelector(".translation-title");
-    const button = document.querySelector("button");
 
-    if (translation.style.display === "none") {
-        translation.style.display = "block";
-        title.style.display = "block";
-        button.innerText = "مخفی کردن ترجمه";
-    } else {
-        translation.style.display = "none";
-        title.style.display = "none";
-        button.innerText = "نمایش ترجمه فارسی";
-    }
+    
+    function openSites() {
+    document.getElementById("sites-popup").style.display = "flex";
 }
+
+function closeSites() {
+    document.getElementById("sites-popup").style.display = "none";
+}
+    
+    function goToChaharqol() {
+    window.location.href = "https://shafinoori29-afk.github.io/Chaharqol/";
+}
+    
 </script>
+  
+  <div id="sites-popup">
+    <div class="sites-box">
+
+        <button class="close-sites" onclick="closeSites()">×</button>
+
+        <h2>مجموعه قرآنی نورالهدی</h2>
+        <p>با نور قرآن، در مسیر هدایت</p>
+
+        <a href="#" class="site-link">
+            آیت‌الکرسی
+        </a>
+      <button class="site-link" onclick="goToChaharqol()">
+    چهار قل
+</button>
+
+    </div>
+</div>
   
   <div id="intro-popup">
     <div class="intro-box">
